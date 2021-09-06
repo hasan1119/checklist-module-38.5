@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aklima Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="text-center">Shopping with Aklima.com</h1>
+    <hr>
+    <section class="w-50 mx-auto">
+        <div class="d-flex">
+            <input class="w-50 form-control rounded-0" placeholder="Product Name" id="product" type="text">
+            <input class="w-50 form-control rounded-0" id="price" placeholder="Product price" type="text">
+        </div>
+        <button onclick="getValue()" class="btn btn-success mt-2 w-100">Add To Cart</button>
+    </section>
+
+    <section class="w-50 mx-auto">
+        <h4 class="mt-2">List of Products:</h4>
+        <ul class="mt-2" id="products">
+
+        </ul>
+        <button onclick="removeItem()" class="btn btn-success mt-2 w-100">purchase</button>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
